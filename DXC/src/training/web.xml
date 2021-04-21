@@ -1,0 +1,11 @@
+
+<web-app>
+    <servlet>
+        <servlet-name>abc</servlet-name>
+        <servlet-class>DatabaServ</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>abc</servlet-name>
+        <url-pattern>/getdata</url-pattern>
+    </servlet-mapping>
+</web-app>
