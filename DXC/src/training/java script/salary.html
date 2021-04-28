@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Check Your Salary</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function salary()
+{   for(var i =0;i<arguments.length;i++)
+    {var salary = arguments[i];
+     document.write("Entered salary is:"+salary+"<br>");
+	var sal = salary;
+	if(sal>50000)
+		{ sal = salary - (0.01*salary);
+		document.writeln("Additional 1% deduction because your salary is above 50000: " + "-"+(0.01*salary));
+		}
+	    document.write("<br>");
+	    var pf = 0.10*salary;
+	    sal = sal-pf;
+	    document.writeln("PF deduction 10 %: -"+ pf+"<br>");
+	    sal = sal-100;
+	    document.writeln("Professional tax 100 :"+"-100 <br>");
+	    document.writeln("Inhand salary is : "+ sal);
+	    document.write("<br> -------------------------------<br>");
+    }
+    
+	}
+
+salary(52000,33000,44000,100032);
+
+</script>
+
+</body>
+</html>

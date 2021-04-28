@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>testjs</title>
+</head>
+<body>
+<script type="text/javascript">
+
+var d = new Date();
+
+day = d.getDay();
+
+//document.writeln(day);
+
+
+function show_alert()
+{
+	//alert("Im an alert");
+	var r = confirm("Yes para?");
+	if(r)
+		alert("you selected ok");
+	else
+		alert("you selected cancel");
+	}
+function product()
+{ var a = prompt("enter a ","0");
+  var b = prompt("enter b ","0");
+  if(a!=null&&b!=null)
+	  {
+	    var c = a*b;
+	    alert(c);
+	}
+}
+</script>
+
+<input type = "button" onclick="product()" value ="check" />
+<input type = "button" onclick="show_alert()" value ="alert" />
+
+</body>
+</html>
